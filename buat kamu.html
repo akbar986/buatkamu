@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cool HTML for Girls</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fcefee, #f9e0f7);
+            color: #4a235a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 500px;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(150, 50, 140, 0.2);
+            padding: 40px 30px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 25px 45px rgba(150, 50, 140, 0.4);
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #a43884;
+            letter-spacing: 1.5px;
+        }
+
+        p.subtitle {
+            font-weight: 300;
+            font-size: 1.3rem;
+            color: #7b3f77;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #a43884;
+            color: white;
+            padding: 14px 36px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(164, 56, 132, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            user-select: none;
+        }
+
+        .btn:hover {
+            background: #d35ba7;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px rgba(211, 91, 167, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 15px rgba(164, 56, 132, 0.3);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #a46eaa;
+            letter-spacing: 0.04em;
+        }
+
+        /* Subtle sparkle animation */
+        .sparkle {
+            position: relative;
+            display: inline-block;
+            color: #d35ba7;
+            font-weight: 700;
+            animation: sparkleAnim 2.5s infinite ease-in-out;
+        }
+
+        @keyframes sparkleAnim {
+            0%, 100% { text-shadow: 0 0 8px #d35ba7, 0 0 20px #f6a4d5; }
+            50% { text-shadow: 0 0 15px #ff77c9, 0 0 30px #fbc3ea; }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                max-width: 90vw;
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            p.subtitle {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 12px 28px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <h1>Hallo <span class="sparkle">Dek</span></h1>
+        <p class="subtitle">Pinjam dulu seratus kirim ke no dibawah.</p>
+        <button class="btn" onclick="alert('Abang lagi butuh Dek wkwkwkwk')">Click me</button>
+        <footer>085762101983</footer>
+    </div>
+</body>
+</html>
